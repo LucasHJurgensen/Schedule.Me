@@ -4,6 +4,12 @@
     font-style: normal;
   }
 
+:root{
+    --background-color: rgba(69, 69, 69, 1);
+    --itens-color: #00BDE8;
+    --text-font: "Jockey One";
+}
+
 body{
     height: 100%;
     margin: 0;
@@ -26,10 +32,10 @@ body{
 }
 
 #tituloSist{
-    font-family: "Jockey One";
+    font-family: var(--text-font);
     margin: 12px;
     font-size: 70px;
-    color: #00BDE8;
+    color: var(--itens-color);
     text-shadow: 0px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -42,13 +48,13 @@ body{
 }
 
 #infoLogin button {
-    font-family: "Jockey One";
+    font-family: var(--text-font);
     width: 30%;
     padding: 5px;
     margin: 20px 0;
     color: #FFFFFF;
-    background-color: #00BDE8;
-    border: solid 1px #00BDE8;
+    background-color: var(--itens-color);
+    border: solid 1px var(--itens-color);
     border-radius: 30px;
     box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
 }
@@ -57,6 +63,10 @@ body{
     box-shadow: 0px 0px 4px #53dfff;
 }
 
+
+
+
+/* Responsividade */
 @media screen and (max-width: 768px) {
     #tituloSist {
         font-size: 40px;
