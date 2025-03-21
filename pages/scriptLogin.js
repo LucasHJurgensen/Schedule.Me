@@ -17,7 +17,7 @@ document.getElementById("login").addEventListener("submit", function(event){even
 
             if (data.nivel === "admin"){
                 
-                window.location.href = "./mainPg-admin.html"; // Pagina Inicial do Adminsitrador
+                window.location.href = "./mainPgAdmin.html"; // Pagina Inicial do Adminsitrador
 
             } else if (data.nivel === "moder"){
 
