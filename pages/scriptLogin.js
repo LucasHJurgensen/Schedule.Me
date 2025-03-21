@@ -21,11 +21,11 @@ document.getElementById("login").addEventListener("submit", function(event){even
 
             } else if (data.nivel === "moder"){
 
-                window.location.href = ""; //Pagina Inicial do Diretor
+                window.location.href = "./mainPgDir.html"; //Pagina Inicial do Diretor
 
             } else if (data.nivel === "coord"){
 
-                window.location.href = ""; //Pagina Inicial do Coordenador
+                window.location.href = "./mainPgCoord.html"; //Pagina Inicial do Coordenador
 
             } else if (data.nivel === "prof"){
 
