@@ -84,8 +84,8 @@ body{
 
 #userArea {
     display: flex;
-    height: 86vh; 
-    width: 100%; 
+    height: 85vh; 
+    width: 101%; 
 }
 
 /*Option Bar*/
@@ -131,18 +131,20 @@ body{
 }
 
 .topContent{
+    margin-top: -20px;
     width: 100%;
-    height: 30%;
+    height: 10%;
     padding: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 
-#calendarSide h1{
+.topContent h1{
     font-family: var(--text-font);
     font-size: 300%;
-    color: #111010;
+    color: #111010c5;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -155,6 +157,11 @@ body{
     display: flex;
 }
 
+#calendar{
+    margin-top: 20px;
+    width: 65%;
+    --fc-border-color: black;
+}
 /* Responsividade */
 @media screen and (max-width: 768px) {
     #tituloSist {
