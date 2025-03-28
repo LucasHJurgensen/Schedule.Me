@@ -171,6 +171,7 @@ body{
     margin-top: 20px;
     width: 65%;
     --fc-border-color: black;
+    font-family: var(--text-font);
 }
 /* Responsividade */
 @media screen and (max-width: 768px) {
