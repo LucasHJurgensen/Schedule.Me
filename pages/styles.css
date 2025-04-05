@@ -68,10 +68,11 @@ body{
 #barraSup{
     width: 100%;
     height: 7vh;
-    padding: 5px;
+    padding: 4px;
     background-color: var(--itens-color);
     margin-top: 0px;
-
+    display: flex;
+    align-items: center;
 }
 
 #nomeSist{
@@ -79,7 +80,7 @@ body{
     font-size: 115%;
     color: #FFFFFF;
     margin-left: 1%;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 #userArea {
@@ -92,12 +93,21 @@ body{
 #optionsSide {
     width: 30%;
     height: 100%;
-    padding: 20px;
+    padding: 19px;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+#optionsSide h1{
+    font-family: var(--text-font);
+    color:#FFFFFF;
+    font-weight: 200;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 #optionsSide button {
@@ -120,9 +130,9 @@ body{
 
 /*Content side*/
 #calendarSide {
-    flex-grow: 1;
+    width: 70%;
     height: 100%;
-    padding: 20px;
+    padding: 19px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -161,6 +171,7 @@ body{
     margin-top: 20px;
     width: 65%;
     --fc-border-color: black;
+    font-family: var(--text-font);
 }
 /* Responsividade */
 @media screen and (max-width: 768px) {
