@@ -2,10 +2,10 @@
 include 'connection.php';
 
 $usuario = $_POST['user'];
-$senha = $_POST['password'];
+$password = $_POST['password'];
 
-$stmt = $conn->prepare("SELECT usuario, senha , nivel from cadastro where usuario = ?");
-$stmt->bind_param("s", $usuario);
+$stmt = $conn->prepare("SELECT usuario, senha , nivel from cadastro where usuario = ?AND senha = ?");
+$stmt->bind_param("ss", $usuario, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 
