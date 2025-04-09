@@ -1,9 +1,16 @@
 document.getElementById("login").addEventListener("submit", function(event){event.preventDefault();
 
+    const roles = {
+        admin: "mainPgAdmin.html",
+        moder: "mainPgDir.html",
+        coord: "mainPgCoord.html",
+        prof: ""
+    }
+
     let user = document.getElementById("usuario").value;
     let password = document.getElementById("senha").value;
 
-    fetch("login.php", {
+    fetch("backend/login.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user: user, password: password})
@@ -14,27 +21,12 @@ document.getElementById("login").addEventListener("submit", function(event){even
     .then(data => {
 
         if(data.status === "ok"){
-
-            if (data.nivel === "admin"){
-                
-                window.location.href = "./mainPgAdmin.html"; // Pagina Inicial do Adminsitrador
-
-            } else if (data.nivel === "moder"){
-
-                window.location.href = "./mainPgDir.html"; //Pagina Inicial do Diretor
-
-            } else if (data.nivel === "coord"){
-
-                window.location.href = "./mainPgCoord.html"; //Pagina Inicial do Coordenador
-
-            } else if (data.nivel === "prof"){
-
-                window.location.href = ""; //Pagina Inicial do Professor
-
-            }
+            window.location.href = roles[data.nivel]
+       
         } else {
             alert("Falha no Login! Verifique seus Dados.");
         }
+        
     })
     .catch(error => console.error("Erro:", error));
 });

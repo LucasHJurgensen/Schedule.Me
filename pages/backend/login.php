@@ -1,10 +1,14 @@
 <?php
 include 'connection.php';
+header("Content-Type: application/json");
 
-$usuario = $_POST['user'];
-$password = $_POST['password'];
+$infoLogin = file_get_contents("php://input");
+$json = json_decode($infoLogin, true);
 
-$stmt = $conn->prepare("SELECT usuario, senha , nivel from cadastro where usuario = ?AND senha = ?");
+$usuario = $json['user'];
+$password = $json['password'];
+
+$stmt = $conn->prepare("SELECT usuario, senha , nivel FROM cadastro WHERE usuario = ? AND senha = ?");
 $stmt->bind_param("ss", $usuario, $password);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -13,12 +17,16 @@ if ($result->num_rows > 0) {
 
     $user = $result->fetch_assoc();
 
-    echo "Usuário encontrado: " . $user['usuario'] . "<br>";
-
-    echo "Nível: " . $user['nivel'];
+    echo json_encode([
+        "status" => "ok",
+        "nivel" => $user['nivel']
+    ]);
 
 } else {
 
-    echo "Usuário não encontrado.";
+    echo json_encode ([
+        "status" => "failed"
+    ]);
+    
 }
 ?>
