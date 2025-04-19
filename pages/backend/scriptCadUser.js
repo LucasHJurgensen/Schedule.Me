@@ -4,10 +4,15 @@ document.getElementById("cadUser").addEventListener("submit", function(event){ev
     let password = document.getElementById("senha").value;
     let level = document.getElementById("nivel").value;
 
-    passwordValidation(user, password, level);
+    if(passwordValidation(password)){
+    
+        userRegister(user, password, level);
+    
+    }
+    
 })
 
-function passwordValidation(user, password, level){
+function passwordValidation(password){
     let confirm = "";
     
     while (confirm !== password){
@@ -17,14 +22,24 @@ function passwordValidation(user, password, level){
         if (confirm === null){
             
             alert("Cadastro Cancelado!");
-            return;
+
+            return false;
        
-        } else if (confirm.toString().trim() !== password.toString().trim()) {
+        } else if (confirm.toString().trim() !== password.toString().trim()){
 
             alert("Senha incorreta, insira a senha novamente");
+            
+        } else if(confirm.toString().trim() === password.toString().trim()){
+
+            return true;
+
         }
     }
+    
 
+}
+
+function userRegister(user, password, level){
     fetch("cadUser.php",{
         method: "POST",
         headers: {"Content-Type": "application/json"},
