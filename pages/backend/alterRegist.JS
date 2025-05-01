@@ -4,7 +4,7 @@
 
 import{passwordValidation} from './passwordValidation.js';
 
-document.getElementById('userAlteration').addEventListener("submit", (e) => { e.preventDefault();
+function alterRegist(){
 
     let user = document.getElementById("usuario").value;
     let password = document.getElementById("senha").value;
@@ -44,7 +44,6 @@ document.getElementById('userAlteration').addEventListener("submit", (e) => { e.
             console.error('Erro ao carregar dados do usuário:', err);
         });
     }
-    
-    
-    
-});
+}
+
+document.getElementById("buttonAlterar").addEventListener("click", alterRegist);

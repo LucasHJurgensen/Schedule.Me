@@ -1,8 +1,6 @@
 import{passwordValidation} from './passwordValidation.js';
 
-document.getElementById('userAlteration').addEventListener("submit", (e) => { e.preventDefault();
-
-
+function deleteRegist(){
     let user = document.getElementById("usuario").value;
     let password = document.getElementById("senha").value;
     let level = document.getElementById("nivel").value;
@@ -37,4 +35,6 @@ document.getElementById('userAlteration').addEventListener("submit", (e) => { e.
             console.error('Erro ao carregar dados do usuário:', err);
         });
     }
-});
+}
+
+document.getElementById("buttonDeletar").addEventListener("click", deleteRegist);
