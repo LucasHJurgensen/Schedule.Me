@@ -1,3 +1,11 @@
+//- Recebe os dados inseridos pelo usuário na pagina de login e envia para o PHP;
+
+//- Recebe a confirmação dos dados do PHP e redireciona o usuário para a página principal de acordo com o nível de usuário;
+
+//- Utiliza : login.php;
+
+//- Utilizado por : logPg.html.
+
 document.getElementById("login").addEventListener("submit", function(event){event.preventDefault();
 
     const roles = {

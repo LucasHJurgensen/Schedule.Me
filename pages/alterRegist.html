@@ -1,0 +1,35 @@
+<!-- Interface onde o usuário irá atualizar as informações dos dados cadastrais dos usuário do sistema;-->
+
+<!-- Utiliza : bringRegist.JS e alterRegist.JS -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Cadastro</title>
+</head>
+<body>
+    <form id="userAlteration">
+        <input type="text" name="user" id="usuario" placeholder="Usuário..." >
+            <br>
+        <input type="password" name="password" id="senha" placeholder="Senha..." value="">
+            <br>
+        <select id="nivel">
+            <option value="moder">Diretor</option>
+            <option value="coord">Coordenador</option>
+            <option value="prof">Professor</option>
+        </select>
+
+        <br>
+
+        <button type="submit" onclick="alterRegist()">Alterar Cadastro</button>
+        <button type="submit" onclick="deleteRegist()">Deletar Usuário</button>
+    </form>
+
+    <script src="backend/bringRegist.JS"></script>
+    <script type="module" src="backend/alterRegist.JS"></script>
+    <script type="module" src="backend/deleteRegist.JS"></script>
+    
+</body>
+</html>

@@ -1,4 +1,8 @@
 <?php
+//Realiza o cadastro de Usuários no banco de dados
+
+//Utilizado por: userRegister.JS (DIRETAMENTE), scriptCadUser.JS (INDIRETAMENTE)
+
 include 'connection.php';
 header("Content-Type: application/json");
 
@@ -12,6 +16,8 @@ $nivel = $json['level'];
 checkRegister($usuario,$senha,$nivel,$conn);
 
 function checkRegister($usuario,$senha,$nivel,$conn){
+    //verifica se o nome de usuário ja existe no banco de dados
+
     $stmt = $conn->prepare("SELECT * FROM cadastro WHERE usuario = ?");
 
         if ($stmt === false){
@@ -41,6 +47,8 @@ function checkRegister($usuario,$senha,$nivel,$conn){
 }
 
 function userRegister($usuario,$senha,$nivel,$conn){
+    //Realiza o “INSERT” no banco dados, assim cadastrando o usuário no sistema;
+
     $stmt = $conn->prepare("INSERT INTO cadastro (usuario, senha, nivel) VALUES (? , ? , ?)");
 
         if ($stmt === false) {

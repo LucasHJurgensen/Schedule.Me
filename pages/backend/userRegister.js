@@ -1,5 +1,11 @@
+//- Envia os dados para que o PHP realize o cadastro do usuário no sistema;
+
+//- Utiliza : cadUser.php;
+
+//- Utilizado por : scriptCadUser.JS.
+
 export function userRegister(user, password, level){
-    fetch("cadUser.php",{
+    fetch("./backend/cadUser.php",{
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({user: user, password: password, level: level}) 
