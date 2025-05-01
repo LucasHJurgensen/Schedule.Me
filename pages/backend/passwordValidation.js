@@ -1,3 +1,8 @@
+//- Função de verificação de senha, onde o usuário tem que colocar novamente a senha para confirmar o cadasto;
+
+//- Utilizado por: scriptCadUser.JS e alterRegist.JS
+
+
 export function passwordValidation(password){
     let confirm = "";
     

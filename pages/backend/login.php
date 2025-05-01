@@ -1,4 +1,8 @@
 <?php
+//- Realiza a consulta dos dados de login inseridos pelo usuário;
+
+//- Utilizado por: scriptLogin.JS
+
 include 'connection.php';
 header("Content-Type: application/json");
 

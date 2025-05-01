@@ -1,3 +1,11 @@
+//- Recebe as informações inseridas pelo usuário, para o cadastro de usuários no sistema;
+
+//- Utiliza : passwordValidation.JS e userRegister.JS
+
+//- Utilizado por : cadUser.html
+
+
+
 import{passwordValidation} from './passwordValidation.js';
 import{userRegister} from './userRegister.js';
 
