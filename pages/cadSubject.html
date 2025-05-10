@@ -25,9 +25,32 @@
 
         <br>
         
+        <select id="diaSelect">
+            <option value="">-- Selecione --</option>
+            <option value="segunda">Segunda-feira</option>
+            <option value="terca">Terça-feira</option>
+            <option value="quarta">Quarta-feira</option>
+            <option value="quinta">Quinta-feira</option>
+            <option value="sexta">Sexta-feira</option>
+        </select>
+
+        <br>
+
+        <select id="horaSelect">
+            <option value="">-- Selecione --</option>
+            <option value="4aulas">19h00 - 22h30 (4 Aulas)</option>
+            <option value="2aulas">19h00 - 20h50 (2 Aulas)</option>
+            
+        </select>
+
+        <br>
+        
+        <button type="submit">Cadastrar Disciplina</button>
     </form>
 
     <script src="./backend/showCurso.js"></script>
     <script src="./backend/showProf.js"></script>
+    <script type="module" src="./backend/scriptCadSub.js"></script>
+
 </body>
 </html>
