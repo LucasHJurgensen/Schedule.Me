@@ -49,6 +49,8 @@ function checkRegister($usuario,$senha,$nivel,$conn){
 function userRegister($usuario,$senha,$nivel,$conn){
     //Realiza o “INSERT” no banco dados, assim cadastrando o usuário no sistema;
 
+    $crypt = password_hash($senha, PASSWORD_BCRYPT);
+
     $stmt = $conn->prepare("INSERT INTO cadastro (usuario, senha, nivel) VALUES (? , ? , ?)");
 
         if ($stmt === false) {
@@ -57,7 +59,7 @@ function userRegister($usuario,$senha,$nivel,$conn){
             exit;
         }
 
-    $stmt->bind_param("sss", $usuario, $senha, $nivel);
+    $stmt->bind_param("sss", $usuario, $crypt, $nivel);
     $check = $stmt->execute();
 
         if ($check){

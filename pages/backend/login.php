@@ -12,25 +12,33 @@ $json = json_decode($infoLogin, true);
 $usuario = $json['user'];
 $password = $json['password'];
 
-$stmt = $conn->prepare("SELECT usuario, senha , nivel FROM cadastro WHERE usuario = ? AND senha = ?");
-$stmt->bind_param("ss", $usuario, $password);
+$stmt = $conn->prepare("SELECT usuario, senha , nivel FROM cadastro WHERE usuario = ?");
+$stmt->bind_param("s", $usuario);
 $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
 
     $user = $result->fetch_assoc();
+    
+    if(password_verify($password,$user['senha'])){
 
-    echo json_encode([
+        echo json_encode([
         "status" => "ok",
         "nivel" => $user['nivel']
+
     ]);
 
-} else {
+    } else {
 
     echo json_encode ([
+
         "status" => "failed"
+
     ]);
     
+    }
 }
+    
+   
 ?>
