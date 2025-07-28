@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDULE.ME - Gerenciamento de Coordenadores</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+</head>
+<body>
+       <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Gerenciamento de Coordenadores</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSideCadUser">
+            <h1>MENU DE AÇÕES</h1>
+            
+            <div id="buttonsCadUser">
+                <button onclick="window.location.href='cadCord.html'">
+                    <p>Cadastrar Novo Coordenador</p>
+                </button>
+                
+                <br>
+
+                <button onclick="window.location.href='cordSelection.html'">
+                    <p>Gerenciar Coordenadores</p>
+                </button>
+                
+                <br>
+
+                <button onclick="MenuPrincipal()">
+                    <p>Voltar ao Menu Principal</p>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="contentArea">
+            <h1>Gerenciamento de Coordenadores</h1>
+            <img src="./assets/coordIco.png" alt="Ícone de Coordenadores" width="300">
+            <p style="color: var(--background-color); margin-top: 10px; text-align: center;">
+                Selecione uma ação no menu ao lado para começar<br>
+                ou retorne ao menu principal
+            </p>
+        </div>
+    </div>
+
+    <script src="./backend/backToMainPg.js"></script>
+</body>
+</html>

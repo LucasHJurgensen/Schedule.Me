@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <title>Schedule.me - Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Gerenciamento de Usuários</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSideCadUser">
+            <h1>MENU DE AÇÕES</h1>
+            
+            <div id="buttonsCadUser">
+                <button onclick="window.location.href='cadUser.html'">
+                    <p>Cadastrar Novo Usuário</p>
+                </button>
+                
+                <br>
+
+                <button onclick="window.location.href='userSelection.html'">
+                    <p>Gerenciar Usuários</p>
+                </button>
+                
+                <br>
+
+                <button onclick="MenuPrincipal()">
+                    <p>Voltar ao Menu Principal</p>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="contentArea">
+            <h1>Gerenciamento de Usuários</h1>
+            <img src="./assets/pessoas.png" alt="Ícone de Usuários" width="300">
+            <p style="color: var(--background-color); margin-top: 20px; text-align: center;">
+                Selecione uma ação no menu ao lado para começar<br>
+                ou retorne ao menu principal
+            </p>
+        </div>
+    </div>
+    <script src="./backend/backToMainPg.js"></script>
+</body>
+</html>

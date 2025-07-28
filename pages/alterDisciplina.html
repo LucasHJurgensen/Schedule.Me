@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesCaduser.css">
+    <title>Cadastro de Disciplinas</title>
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Alteração de cadastro de Disciplinas</p>
+    </div>
+ 
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='discSelection.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="formContainer">
+
+            <h1>Alteração de cadastro de Disciplinas</h1>
+
+            <form class="cadCurso" id="cadSubject">
+                <label for="nDisciplina">Nome da Disciplina:</label>
+                <input type="text" name="nDisciplina" id="nDisciplina">
+
+                <div class="selection-box">
+
+                    <div class="selection-box">
+
+                        <div class="form-group">
+                                <label for="cursoSelect">Curso:</label>
+                                <select id="cursoSelect">
+                                    <option value="">-- Selecione --</option>
+                                </select>
+                                
+                                <br>
+
+                                <label for="profSelect">Professor:</label>
+                                <select id="profSelect">
+                                    <option value="">-- Selecione --</option>
+                                </select>
+
+                                <br>
+                                
+                                <label for="diaSelect">Dia da aula:</label>
+                                <select id="diaSelect">
+                                    <option value="">-- Selecione --</option>
+                                    <option value="Segunda-feira">Segunda-feira</option>
+                                    <option value="Terça-feira">Terça-feira</option>
+                                    <option value="Quarta-feira">Quarta-feira</option>
+                                    <option value="Quinta-feira">Quinta-feira</option>
+                                    <option value="Sexta-feira">Sexta-feira</option>
+                                </select>
+
+                                <br>
+
+                                <label for="horaSelect">Horário das aulas:</label>
+                                <select id="horaSelect">
+                                    <option value="">-- Selecione --</option>
+                                    <option value="19h00-22h30">19h00 - 22h30 (4 Aulas)</option>
+                                    <option value="19h00-20h50">19h00 - 20h50 (2 Aulas)</option>
+                                    <option value="20h50-22h30 ">20h50 - 22h30 (2 Aulas)</option>
+                                </select>
+
+                                <br>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="cadButton-alterDisc">
+                <button type="button" id="delDisc-button">Excluir Disciplina</button>
+                <button type="button" id="cadDisc-button">Alterar Disciplina</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="./backend/showCurso.js"></script>
+    <script src="./backend/showProf.js"></script>
+    <script src="./backend/bringRegistDisc.js"></script>
+    <script src="./backend/alterRegistDisc.js"></script>
+    <script src="./backend/backToMainPg.js"></script>
+</body>
+</html>

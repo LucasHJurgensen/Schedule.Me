@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesUser.css">
+    <title>Alterar coordenador</title>
+</head>
+<body>
+  <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Alterar cadastro de Coordenador</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='menuCoord.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="selectionContainer">
+            <h1>Selecionar Coordenador para Edição</h1>
+            
+            <div class="selection-box">
+                <div class="form-group">
+                    <label for="coordenadorSelect">Selecione o Coordenador:</label>
+                    <select id="coordenadorSelect">
+                        <option value="">-- Selecione um usuário --</option>
+                        <!-- Os usuários serão carregados dinamicamente pelo JavaScript -->
+                    </select>
+                </div>
+                
+                <button class="action-button" onclick="redirect()">Alterar Cadastro</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./backend/showCoord.JS"></script>
+    <script src="./backend/backToMainPg.js"></script>
+</body>
+</html>

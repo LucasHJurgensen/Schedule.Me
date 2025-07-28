@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <title>SCHEDULE.ME - Gerenciamento de Cursos</title>
+</head>
+<body>
+       <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Gerenciamento de Cursos</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSideCadUser">
+            <h1>MENU DE AÇÕES</h1>
+            
+            <div id="buttonsCadUser">
+                <button onclick="window.location.href='cadCurso.html'">
+                    <p>Cadastrar Novo Curso</p>
+                </button>
+                
+                <br>
+
+                <button onclick="window.location.href='cursoSelection.html'">
+                    <p>Gerenciar Cursos</p>
+                </button>
+                
+                <br>
+
+                <button onclick="window.location.href='menuDisciplinas.html'">
+                    <p>Gerenciamento de Disciplinas</p>
+                </button>
+
+                <br>
+
+                <button onclick="MenuPrincipal()">
+                    <p>Voltar ao Menu Principal</p>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="contentArea">
+            <h1>Gerenciamento de Cursos</h1>
+            <img src="./assets/curso-icon.png" alt="Ícone de Cursos" width="300">
+            <p style="color: var(--background-color); margin-top: 10px; text-align: center;">
+                Selecione uma ação no menu ao lado para começar<br>
+                ou retorne ao menu principal
+            </p>
+        </div>
+    </div>
+
+    <script src="./backend/backToMainPg.js"></script>
+</body>
+</html>

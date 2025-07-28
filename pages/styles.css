@@ -1,0 +1,576 @@
+.jockey-one-regular {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+<<<<<<< HEAD
+  }
+
+:root{
+    --background-color: rgba(69, 69, 69, 1);
+    --itens-color: #00BDE8;
+    --text-font: "Jockey One";
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-color: rgba(69, 69, 69, 1); 
+}
+/* Pagina de Login*/
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;
+    height: 100%;         
+}
+#telaLog{
+=======
+}
+
+:root {
+    --background-color: rgba(69, 69, 69, 1);
+    --itens-color: #00BDE8;
+    --itens-color-hover: #00a8d1;
+    --text-font: "Jockey One";
+    --text-color-light: #FFFFFF;
+    --text-color-dark: #333;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--text-font);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Login */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#telaLog {
+>>>>>>> master
+    width: 500px;
+    padding: 20px;
+    margin: 23vh auto;
+    text-align: center;
+<<<<<<< HEAD
+
+}
+
+#tituloSist{
+=======
+}
+
+#tituloSist {
+>>>>>>> master
+    font-family: var(--text-font);
+    margin: 12px;
+    font-size: 70px;
+    color: var(--itens-color);
+    text-shadow: 0px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+#login input {
+<<<<<<< HEAD
+    width: 65%;              
+    padding: 10px;             
+    margin: 10px 0;    
+    border:solid 1px #FFFFFF;           
+    border-radius: 10px;  
+=======
+    width: 65%;
+    padding: 10px;
+    margin: 10px 0;
+    border: solid 1px #FFFFFF;
+    border-radius: 10px;
+>>>>>>> master
+}
+
+#login button {
+    font-family: var(--text-font);
+    width: 30%;
+    padding: 5px;
+    margin: 20px 0;
+<<<<<<< HEAD
+    color: #FFFFFF;
+=======
+    color: var(--text-color-light);
+>>>>>>> master
+    background-color: var(--itens-color);
+    border: solid 1px var(--itens-color);
+    border-radius: 30px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+<<<<<<< HEAD
+}
+
+#login button:hover{
+    box-shadow: 0px 0px 4px #53dfff;
+}
+
+
+/* Main Page*/
+#barraSup{
+    width: 100%;
+    height: 7vh;
+    padding: 4px;
+    background-color: var(--itens-color);
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#nomeSist{
+    font-family: var(--text-font);
+    font-size: 115%;
+    color: #FFFFFF;
+=======
+    cursor: pointer;
+}
+
+#login button:hover {
+    box-shadow: 0px 0px 4px #53dfff;
+}
+
+/* Barra superior */
+#barraSup {
+    width: 100%;
+    height: 2%;
+    padding: 4px;
+    background-color: var(--itens-color);
+    display: flex;
+}
+
+#nomeSist {
+    font-size: 115%;
+    color: var(--text-color-light);
+>>>>>>> master
+    margin-left: 1%;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+<<<<<<< HEAD
+#userArea {
+    display: flex;
+    height: 85vh; 
+    width: 101%; 
+}
+
+/*Option Bar*/
+=======
+/* Área principal */
+#userArea {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Menu lateral */
+>>>>>>> master
+#optionsSide {
+    width: 30%;
+    height: 100%;
+    padding: 19px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+<<<<<<< HEAD
+#optionsSide h1{
+    font-family: var(--text-font);
+    color:#FFFFFF;
+    font-weight: 200;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+#optionsSide button {
+    font-family: var(--text-font);
+    font-size: 20px;
+    width: 75%;
+    padding: 5px;
+    margin: 5px;
+    color: #FFFFFF;
+=======
+#optionsSide h1 {
+    font-family: var(--text-font);
+    color: var(--text-color-light);
+    font-weight: 200;
+    margin: 20px 0;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+ 
+#optionsSide button {
+    font-family: var(--text-font);
+    color: var(--text-color-light);
+    font-weight: 200;
+    font-size: 20px;
+    width: 75%;
+    padding: 10px;
+    margin: 10px auto;
+    color: var(--text-color-light);
+>>>>>>> master
+    background-color: var(--itens-color);
+    border: solid 1px var(--itens-color);
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+<<<<<<< HEAD
+}
+
+#optionsSide button:hover{
+    box-shadow: 0px 0px 4px #53dfff;
+}
+
+
+/*Content side*/
+=======
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+#optionsSide button:hover {
+    background-color: var(--itens-color-hover);
+    box-shadow: 0px 0px 8px #53dfff;
+}
+
+#optionsSideCadUser {
+    width: 30%;
+    height: 100%;
+    padding: 19px;
+    /*background-color: var(--background-color);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#optionsSideCadUser h1 {
+    font-family: var(--text-font);
+    color: var(--text-color-light);
+    font-weight: 200;
+    margin: 20px;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+#buttonsCadUser{
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#buttonsCadUser button {
+    font-family: var(--text-font);
+    color: var(--text-color-light);
+    font-weight: 200;
+    font-size: 20px;
+    width: 75%;
+    height: 15%;
+    padding: 10px;
+    margin: 5px 0;
+    color: var(--text-color-light);
+    background-color: var(--itens-color);
+    border: solid 1px var(--itens-color);
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#optionsSideCadUser button:hover {
+    background-color: var(--itens-color-hover);
+    box-shadow: 0px 0px 8px #53dfff;
+}
+
+/* Calendário */
+>>>>>>> master
+#calendarSide {
+    width: 70%;
+    height: 100%;
+    padding: 19px;
+<<<<<<< HEAD
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topContent{
+    margin-top: -20px;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: blueviolet;*/
+}
+
+.topContent h1{
+    font-family: var(--text-font);
+    font-size: 300%;
+    color: #111010c5;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+#calendarOptions{
+    margin-top: -45%;
+    background-color: brown;
+    padding: 5px;
+    width: 95%;
+    height: 5%;
+    display: flex;
+}
+
+#calendar{
+    margin-top: 20px;
+    width: 65%;
+    --fc-border-color: black;
+    font-family: var(--text-font);
+}
+/* Responsividade */
+=======
+    background-color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#calendarContainer {
+    width: 80%;
+    height: 20%;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+#calendar {
+    width: 80%;
+    height: 80%;
+    max-width: 900px;
+    --fc-border-color: black;
+    font-family: var(--text-font);
+    font-size: 16px;
+}
+
+.fc .fc-toolbar {
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.8rem !important;
+    color: var(--itens-color);
+}
+
+.fc .fc-button {
+    padding: 8px 16px !important;
+    background-color: var(--itens-color) !important;
+    border: none !important;
+    font-size: 1rem !important;
+}
+
+.fc .fc-button:hover {
+    background-color: #0095b8 !important;
+}
+
+.fc .fc-daygrid-day-frame {
+    min-height: 100px;
+    padding: 5px;
+}
+
+.fc .fc-daygrid-day-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.fc-event {
+    font-size: 0.9rem;
+    padding: 3px 6px;
+    margin: 2px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fc .fc-col-header-cell {
+    padding: 10px 0;
+    background-color: rgba(0, 189, 232, 0.1);
+}
+
+.fc .fc-col-header-cell-cushion {
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    text-decoration: none;
+    padding: 8px;
+}
+
+#contentArea{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contentArea h1 {
+    color: var(--background-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.grid-horarios{
+    width: 100%;
+    height: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.box-horario{
+    background-color: azure;
+    width: 30%;
+    height: 25%;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px #00a8d1;
+}
+
+/* Responsivo */
+>>>>>>> master
+@media screen and (max-width: 768px) {
+    #tituloSist {
+        font-size: 40px;
+    }
+
+<<<<<<< HEAD
+    #infoLogin input {
+        width: 50%;
+    }
+
+    #infoLogin button {
+        width: 50%;
+    }
+=======
+    #login input {
+        width: 50%;
+    }
+
+    #login button {
+        width: 50%;
+    }
+
+    #calendarContainer {
+        height: 65vh;
+        padding: 0 5px;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 1.4rem !important;
+    }
+
+    .fc .fc-button {
+        padding: 6px 10px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .fc .fc-daygrid-day-frame {
+        min-height: 80px;
+    }
+>>>>>>> master
+}
+
+@media screen and (max-width: 480px) {
+    #tituloSist {
+        font-size: 35px;
+    }
+
+<<<<<<< HEAD
+    #infoLogin input {
+=======
+    #login input {
+>>>>>>> master
+        width: 60%;
+        font-size: 14px;
+    }
+
+<<<<<<< HEAD
+    #infoLogin button {
+        width: 30%;
+        font-size: 16px;
+    }
+=======
+    #login button {
+        width: 30%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    body {
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--text-font);
+    overflow: hidden;
+    }
+
+    #barraSup{
+        height: 10%;
+        padding:2px;
+    }
+
+    #tituloSist {
+        font-size: 45px;
+    }
+
+    #telaLog {
+        width: 380px;
+    }
+
+    #login input {
+        width: 80%;
+    }
+
+    #login button {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    #optionsSide h1 {
+        font-size: 20px;
+    }
+>>>>>>> master
+}

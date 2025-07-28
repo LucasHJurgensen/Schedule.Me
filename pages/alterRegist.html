@@ -1,0 +1,120 @@
+<<<<<<< HEAD
+<!-- Interface onde o usuário irá atualizar as informações dos dados cadastrais dos usuário do sistema;-->
+
+<!-- Utiliza : bringRegist.JS e alterRegist.JS -->
+
+=======
+>>>>>>> master
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Alteração de Cadastro</title>
+</head>
+<body>
+    <form id="userAlteration">
+        <input type="text" name="user" id="usuario" placeholder="Usuário..." >
+            <br>
+        <input type="password" name="password" id="senha" placeholder="Senha..." value="">
+            <br>
+        <select id="nivel">
+            <option value="moder">Diretor</option>
+            <option value="coord">Coordenador</option>
+            <option value="prof">Professor</option>
+        </select>
+
+        <br>
+
+        <button id="buttonAlterar" type="button" >Alterar Cadastro</button>
+        <button id="buttonDeletar" type="button" >Deletar Usuário</button>
+    </form>
+
+    <script src="backend/bringRegist.JS"></script>
+    <script type="module" src="backend/alterRegist.js"></script>
+    <script type="module" src="backend/deleteRegist.js"></script>
+    
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesalterRegist.css">
+    <script src="./backend/bringRegist.js"></script>
+    <script type="module" src="./backend/alterRegist.js"></script>
+    <script type="module" src="./backend/deleteRegist.js"></script>
+    
+    <title>Schedule.me - Alteração de Cadastro</title>
+
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Alteração de Cadastro</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='userSelection.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="formContainer">
+            <h1>Alterar Cadastro de Usuário</h1>
+            
+            <form id="userAlteration">
+                <div class="form-group">
+                    <label for="usuario">Nome de Usuário:</label>
+                    <input type="text" id="usuario" name="user" placeholder="Digite o novo nome de usuário" required>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="nivel">Nível de Acesso:</label>
+                    <select id="nivel" name="nivel" required>
+                        <option value="moder">Diretor</option>
+                        <option value="coord">Coordenador</option>
+                        <option value="prof">Professor</option>
+                    </select>
+                </div>
+                
+                <div class="button-group">
+                    <button id="buttonAlterar" type="button">Salvar Alterações</button>
+                    <button id="buttonRedefinirSenha" type="button">Redefinir Senha</button>
+                    <button id="buttonDeletar" type="button">Deletar Usuário</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup hidden">
+            
+        <div class="popup-content">
+                
+            <span class="close-btn">&times;</span>
+               
+            <div>
+                    
+            <h2 id="popup-title"> Redefinição de Senha </h2>
+            
+            <form class="formRedefinition">
+            <label for="novaSenha">Insira a nova senha do Usuário:</label>
+            <input type="password" id="novaSenha" name="novaSenha" placeholder="Insira a senha...">
+            <br>   
+            
+            <label for="adminSenha">Insira a senha de Administrador:</label>
+            <input type="password" id="adminSenha" name="adminSenha" placeholder="Insira a senha de administrador...">
+            <br>
+
+            <button type="button" id="salvarSenha">Alterar Senha</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./backend/passwordRedefinition.js"></script>
+    <script src="./backend/backToMainPg.js"></script>
+>>>>>>> master
+</body>
+</html>

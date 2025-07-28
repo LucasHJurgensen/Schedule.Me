@@ -1,0 +1,420 @@
+:root {
+            --background-color: rgba(69, 69, 69, 1);
+            --itens-color: #00BDE8;
+            --itens-color-hover: #00a8d1;
+            --text-font: "Jockey One", sans-serif;
+            --text-color-light: #FFFFFF;
+            --text-color-dark: #333;
+            --input-border: #ccc;
+            --input-focus: #00BDE8;
+        }
+
+        body {
+            font-family: var(--text-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color-dark);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        #barraSup {
+            width: 100%;
+            height: 7vh;
+            padding: 4px;
+            background-color: var(--itens-color);
+            display: flex;
+            align-items: center;
+        }
+
+        #nomeSist {
+            font-size: 1.5rem;
+            color: var(--text-color-light);
+            margin-left: 2%;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        #userArea {
+            display: flex;
+            flex-grow: 1;
+            height: calc(100vh - 7vh);
+        }
+
+        #optionsSide {
+            width: 30%;
+            padding: 20px;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #optionsSide h1 {
+            color: var(--text-color-light);
+            font-weight: 200;
+            margin-bottom: 40px;
+            text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        #optionsSide button {
+            font-family: "Jockey One";
+            font-size: 20px;
+            width: 75%;
+            padding: 10px;
+            margin: 10px auto;
+            color: var(--text-color-light);
+            background-color: var(--itens-color);
+            border: solid 1px var(--itens-color);
+            border-radius: 15px;
+            box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #optionsSide button:hover {
+            background-color: var(--itens-color-hover);
+            box-shadow: 0px 0px 8px #53dfff;
+        }
+
+        #formContainer {
+            width: 70%;
+            padding: 40px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #formContainer h1 {
+            color: var(--background-color);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        #cadUser {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 1.1rem;
+            color: var(--background-color);
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-family: var(--text-font);
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--input-focus);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 189, 232, 0.2);
+        }
+
+        #cadUser button {
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        #cadUser button:hover {
+            background-color: var(--itens-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .password-strength {
+            margin-top: 5px;
+            height: 5px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s, background-color 0.3s;
+        }
+
+        .cadCord{
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .cadButton{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cadButton button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cadButton button:hover {
+            background-color: var(--itens-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cadButton #buttonDeletar{
+            background-color: #801222;
+        }
+
+        .cadCurso{
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .cadButton{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cadButton button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #nDisciplina{
+            padding: 12px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-family: var(--text-font);
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        #nDisciplina:focus{
+            border-color: var(--input-focus);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 189, 232, 0.2);
+        }
+
+        .cadButton-disc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cadButton-disc button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cadButton-disc button:hover{
+            background-color: var(--itens-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cadButton-alterDisc{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cadButton-alterDisc button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cadButton-alterDisc button:hover{
+            background-color: var(--itens-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #delDisc-button{
+            background-color: #801222;
+        }
+        .ProfButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ProfButton button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .ProfButton button:hover{
+            background-color: var(--itens-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (max-width: 768px) {
+            #userArea {
+                flex-direction: column;
+            }
+
+            #optionsSide, #formContainer {
+                width: 100%;
+                padding: 20px;
+            }
+
+            #cadUser {
+                width: 90%;
+            }
+        }
+        
+        @media screen and (max-width: 1366px) {
+          
+        .cadCurso{
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        #nDisciplina{
+            padding: 6px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-family: var(--text-font);
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .cadButton-disc button{
+            font-family: "Jockey One";
+            width: 40%;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: var(--itens-color);
+            color: var(--text-color-light);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .form-group label {
+            font-size: 1rem;
+            color: var(--background-color);
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 6px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-family: var(--text-font);
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--input-focus);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 189, 232, 0.2);
+        }
+
+        
+        #formContainer {
+            width: 70%;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #formContainer h1 {
+            color: var(--background-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        }

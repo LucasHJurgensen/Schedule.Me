@@ -1,0 +1,96 @@
+<<<<<<< HEAD
+<!-- Interface onde o usuário irá inserir os dados cadastrais dos usuário para realizar o cadastro no sistema;-->
+
+<!-- Utiliza : scriptCadUser.JS-->
+
+=======
+>>>>>>> master
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <form id="cadUser">
+        <input type="text" name="user" id="usuario" placeholder="Usuário..." >
+            <br>
+        <input type="password" name="password" id="senha" placeholder="Senha..." value="">
+            <br>
+        <select id="nivel">
+            <option value="moder">Diretor</option>
+            <option value="coord">Coordenador</option>
+            <option value="prof">Professor</option>
+        </select>
+
+        <br>
+
+        <button type="submit">Cadastrar Usuário</button>
+    </form>
+
+    <script type='module' src="./backend/scriptCadUser.js"></script>
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesCaduser.css">
+    <script type='module' src="./backend/scriptCadUser.js"></script>
+    <script src="backend/passwordStrength.js"></script>
+    <title>Schedule.me - Cadastro de Usuário</title>
+    
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Cadastro de Usuário</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='userSelection.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="formContainer">
+            <h1>Cadastro de Novo Usuário</h1>
+            
+            <form id="cadUser">
+                <div class="form-group">
+                    <label for="usuario">Nome de Usuário:</label>
+                    <input type="text" id="usuario" name="user" placeholder="Digite o nome de usuário" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="password" placeholder="Digite a senha" required>
+                    <div class="password-strength">
+                        <div class="strength-bar" id="passwordStrength"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme a senha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nivel">Nível de Acesso:</label>
+                    <select id="nivel" name="nivel" required>
+                        <option value="" disabled selected>Selecione o nível de acesso</option>
+                        <option value="moder">Diretor</option>
+                        <option value="coord">Coordenador</option>
+                        <option value="prof">Professor</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Cadastrar Usuário</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./backend/backToMainPg.js"></script>
+>>>>>>> master
+</body>
+</html>

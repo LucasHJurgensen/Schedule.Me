@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesCadUser.css">
+    <title>Cadastro de Professor</title>
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Cadastro de Professor</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='menuProf.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="formContainer">
+
+            <h1>Cadastro de Novo Usuário</h1>
+
+            <form class="cadCord" id="cadCord">
+                <div class="form-group">
+                    <label for="profNome">Insira o nome do Professor:</label>
+                    <input type="text" id="profNome" name="profNome">
+                </div >
+
+                <div class="selection-box">
+
+                    <div class="selection-box">
+
+                        <div class="form-group">
+
+                            <label for="usuarioSelect">Atribua um usuário ao Professor:</label>
+                            <select id="usuarioSelect">
+                                <option value="">-- Selecione um usuário --</option>
+                                    <!-- Os usuários serão carregados dinamicamente pelo JavaScript -->
+                            </select>
+
+                            
+                                <label for="cursoSelect">Selecione o curso:</label>
+                                <select id="cursoSelect">
+                                    <option value="">-- Selecione --</option>
+                                </select>
+
+                        </div>    
+                    </div>
+
+                </div>
+
+                
+
+           
+                <div class="ProfButton">
+                    <button type="submit">Cadastrar Professor</button>
+                </div>
+            </form>
+
+        </div>
+    
+    </div>
+    <script type='module' src="backend/scriptCadProf.js"></script>
+    <script src="backend/showUsersProf.js"></script>
+    <script src="backend/backToMainPg.js"></script>
+    <script src="backend/showCurso.js"></script>
+</body>
+</html>

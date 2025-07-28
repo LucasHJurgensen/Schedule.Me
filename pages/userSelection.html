@@ -1,0 +1,67 @@
+<<<<<<< HEAD
+<!-- Interface de seleção de usuário para realizar a alteração dos dados cadastrais; -->
+<!--  Utiliza : showUser.JS.-->
+
+<!DOCTYPE html>
+=======
+    <!DOCTYPE html>
+>>>>>>> master
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Alterar Usuário</title>
+</head>
+<body>
+
+  <h3>Selecione um Usuário</h3>
+
+  <select id="usuarioSelect">
+    <option value="">-- Selecione --</option>
+  </select>
+
+  <button type="submit" onclick="redirect()"> Alterar Cadastro </button>
+
+    <script src="./backend/showUser.JS"></script>
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesUser.css">
+    <title>Schedule.me - Alterar Usuário</title>
+</head>
+<body>
+    <div id="barraSup">
+        <p id="nomeSist">SCHEDULE.ME - Alterar Usuário</p>
+    </div>
+
+    <div id="userArea">
+        <div id="optionsSide">
+            <h1>MENU DE AÇÕES</h1>
+            <button onclick="window.location.href='menuCadUser.html'">Voltar</button>
+            <button onclick="MenuPrincipal()">Menu Principal</button>
+        </div>
+
+        <div id="selectionContainer">
+            <h1>Selecionar Usuário para Edição</h1>
+            
+            <div class="selection-box">
+                <div class="form-group">
+                    <label for="usuarioSelect">Selecione o usuário:</label>
+                    <select id="usuarioSelect">
+                        <option value="">-- Selecione um usuário --</option>
+                        <!-- Os usuários serão carregados dinamicamente pelo JavaScript -->
+                    </select>
+                </div>
+                
+                <button class="action-button" onclick="redirect()">Alterar Cadastro</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./backend/showUser.JS"></script>
+    <script src="./backend/backToMainPg.js"></script>
+>>>>>>> master
+</body>
+</html>
